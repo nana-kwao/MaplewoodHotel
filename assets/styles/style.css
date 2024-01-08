@@ -291,13 +291,16 @@ section{
   display: flex;
   flex-direction: row;
 }
-.main-services ul li{
+.main-services ul div{
+  margin: 10px 30px;
+}
+.main-services ul div li{
   display: flex;
   gap: 15px;
   width: auto;
   margin-bottom: 20px;
 }
-.main-services .services-list .services-list-item{
+.main-services .services-list div .services-list-item{
   display: flex;
   flex-direction: column;
 }
@@ -340,4 +343,16 @@ section{
     font-size: 28px;
   
   }
+  .main-services ul{
+    flex-direction: column;
+  }
+  .main-services ul div li{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .services-list-item h2{
+    text-align: center;
+  }
+  
 }
