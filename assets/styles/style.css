@@ -316,7 +316,7 @@ section{
   height: auto;
   text-align: center;
 }
-@media screen and (max-width: 685px) {
+@media screen and (max-width: 725px) {
   .logo, .menu-btn{
     margin: 10px;
   }
