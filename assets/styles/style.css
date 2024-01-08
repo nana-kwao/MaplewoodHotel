@@ -325,7 +325,7 @@ section{
   height: auto;
   text-align: center;
 }
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 690px) {
   .logo, .menu-btn{
     margin: 10px;
   }
@@ -364,4 +364,9 @@ section{
     text-align: center;
   }
   
+}
+@media screen and (max-width: 910px){
+  .home-icons{
+    display: none;
+  }
 }
