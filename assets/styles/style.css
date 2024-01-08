@@ -64,10 +64,11 @@ body{
 .menu-area{
   display: none;
   flex-direction: column;
+  gap: 20px;
   padding: 20px;
   width: 270px;
   height: 100vh;
-  background-color: #151e22;
+  background-color: rgb(0, 0, 0);
   position: fixed;
   top: 0px;
   right: 0px;
@@ -106,12 +107,12 @@ body{
 }
 .menu-area p{
   opacity: 0.5;
-  margin: 10px 0px;
+  margin: 20px 0px;
   text-align: justify;
 }
 
 .menu-icons{
-  margin: 20px 5px;
+  margin: 30px 5px;
   padding: 10px;
   height: auto;
   width: auto;
@@ -179,6 +180,10 @@ section{
   font-size: 18px;
   font-family: "ubuntu";
   font-weight: 600;
+}
+#home button:hover{
+  color: #000000;
+  background-color: rgb(255, 255, 255, 0.8);
 }
 #home .home-icons{
   position: absolute;
