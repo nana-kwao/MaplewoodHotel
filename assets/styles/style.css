@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "ubuntu";
+  src: url("../fonts/Ubuntu/Ubuntu-Bold.ttf");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Roboto";
+  color: #ffffff;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  height: inherit;
+}
+.logo{
+  width: auto;
+  color: #ffffff;
+  font-size: larger;
+  font-family: "ubuntu";
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 30px 45px;
+  padding: 5px;
+  background-color: #151e22;
+}
+.logo span {
+  color: #00c853;
+}
+.menu-btn{
+  width: auto;
+  background-color: #151e22;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 30px 45px;
+  color: #00c853;
+  font-size: large;
+  cursor: pointer;
+}
+.menu-btn i{
+  font-size: larger;
+  color: #ffffff;
+  margin: 0 5px;
+}
+.menu-area{
+  display: none;
+  flex-direction: column;
+  padding: 20px;
+  width: 270px;
+  height: 100vh;
+  background-color: #151e22;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+
+.navClose{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.menu-area .navClose h6{
+  font-size: x-small;
+  color: #00c853;
+  margin: 5px 0px;
+  font-weight: 500;
+  font-family: "ubuntu";
+  cursor: pointer;
+}
+.close-btn{
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.menu-list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0px;
+  padding: 5px 0px;
+}
+.menu-list-item{
+  font-weight: 400;
+  cursor: pointer;
+}
+.menu-area p{
+  opacity: 0.5;
+  margin: 10px 0px;
+  text-align: justify;
+}
+
+.menu-icons{
+  margin: 20px 5px;
+  padding: 10px;
+  height: auto;
+  width: auto;
+}
+.menu-icons ul{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.arrowUp{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px 10px;
+}
+section{
+  display: flex;
+}
+#home{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 150px 10px;
+  height: auto;
+  background-image: url("../images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80vw;
+  height: auto;
+  padding: 10px 20px;
+  text-align: center;
+}
+#home .home-text h3{
+  font-size: large;
+  font-weight: 700;
+  color: #00c853;
+  margin: 10px 0;
+}
+#home .home-text h1{
+  font-size: 52px;
+  font-family: "ubuntu";
+  margin: 10px 0;
+}
+#home .home-text p{
+  font-size: x-large;
+  font-weight: 800;
+  text-align: center;
+}
+#home button{
+  width: 270px;
+  height: 50px;
+  margin: 10px 0px;
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  font-size: 18px;
+  font-family: "ubuntu";
+  font-weight: 600;
+}
+
+
+@media screen and (max-width: 685px) {
+  .logo, .menu-btn{
+    margin: 10px;
+  }
+  section{
+    flex-direction: column;
+  }
+}
