@@ -15,16 +15,20 @@ const menuArea = document.querySelector(".menu-area");
 const closeBtn = document.querySelector(".navClose button i");
 const homeIcons = document.querySelector(".home-icons");
 
-const mediaQuery_max_910 = window.matchMedia("max-width: 910px");
-if (mediaQuery_max_910){
+function homeIcons(){
+  const mediaQuery_max_910 = window.matchMedia("max-width: 910px");
+  if (mediaQuery_max_910){
     homeIcons.style.display = "none";
+  }else{
+    homeIcons.style.display = "block";
   }
+}
 
 // close menu funtion
 function closeMenu(){
   menuArea.style.display = "none";
   menuBtn.style.display = "block";
-  homeIcons.style.display = "block";
+  homeIcons();
 }
 
 // open menu function
