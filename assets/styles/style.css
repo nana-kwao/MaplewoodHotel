@@ -180,13 +180,93 @@ section{
   font-family: "ubuntu";
   font-weight: 600;
 }
+#home .home-icons{
+  position: absolute;
+  right: 0;
+  margin: 0px 30px;
+}
+.home-icons li{
+  font-size: larger;
+  margin-bottom: 10px;
+}
 
-
+#about{
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+  padding: 120px 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #00c853;
+  text-align: center;
+}
+.about-header{
+  margin-bottom: 30px; 
+  border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+  padding: 10px 0px;
+}
+.about-header h3{
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.about-header h1{
+  font-size: 48px;
+  font-family: "ubuntu";
+  text-align: center;
+}
+.about-text{
+  margin: 20px 0px;
+  padding: 10px 100px;
+}
+.about-text p{
+  text-align: center;
+  font-size: 18px;
+  color: #000000;
+  opacity: 0.8;
+  margin: 10px 0px;
+}
+.portfolio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio li{
+  margin: 10px 20px;
+  border-right: 1px solid rgb(255, 255, 255, 0.5);
+  padding: 20px;
+}
+.portfolio li h1{
+  font-size: 38px;
+  font-family: "ubuntu";
+}
+.portfolio li h3{
+  margin: 10px 0px;
+  font-size: 12px;
+  color: #000000;
+}
 @media screen and (max-width: 685px) {
   .logo, .menu-btn{
     margin: 10px;
   }
   section{
     flex-direction: column;
+  }
+  .home-icons{
+    display: none;
+  }
+  .about-header h1{
+    font-size: 32px;
+  }
+  .about-text{
+    padding: 10px;
+  }
+  .portfolio{
+    flex-direction: column;
+  }
+  .portfolio li{
+    border-right: none;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
   }
 }

@@ -13,15 +13,17 @@
 const menuBtn = document.querySelector(".menu-btn");
 const menuArea = document.querySelector(".menu-area");
 const closeBtn = document.querySelector(".navClose button i");
-
+const homeIcons = document.querySelector(".home-icons");
 // close menu funtion
 function closeMenu(){
   menuArea.style.display = "none";
   menuBtn.style.display = "block";
+  homeIcons.style.display = "block";
 }
 
 // open menu function
 function openMenu(){
+  homeIcons.style.display = "none";
   menuArea.style.display = "flex";
   menuBtn.style.display = "none";
 }
