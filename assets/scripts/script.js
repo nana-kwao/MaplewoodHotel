@@ -20,7 +20,7 @@ const homeIcons = document.querySelector(".home-icons");
 function closeMenu(){
   menuArea.style.display = "none";
   menuBtn.style.display = "block";
-  homeIcons.style.display = "block";
+  homeIcons.style.display = "flex";
 }
 
 // open menu function
