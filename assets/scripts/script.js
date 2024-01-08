@@ -15,20 +15,12 @@ const menuArea = document.querySelector(".menu-area");
 const closeBtn = document.querySelector(".navClose button i");
 const homeIcons = document.querySelector(".home-icons");
 
-function homeIcons(){
-  const mediaQuery_max_910 = window.matchMedia("max-width: 910px");
-  if (mediaQuery_max_910){
-    homeIcons.style.display = "none";
-  }else{
-    homeIcons.style.display = "block";
-  }
-}
 
 // close menu funtion
 function closeMenu(){
   menuArea.style.display = "none";
   menuBtn.style.display = "block";
-  homeIcons();
+  homeIcons.style.display = "block";
 }
 
 // open menu function
