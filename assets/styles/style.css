@@ -38,10 +38,11 @@ body{
   border-radius: 5px;
   margin: 30px 45px;
   padding: 5px;
+  z-index: 3;
   background-color: #151e22;
 }
 .logo span {
-  color: #00c853;
+  color: #7c4dff;
 }
 .menu-btn{
   width: auto;
@@ -52,8 +53,9 @@ body{
   padding: 5px;
   border-radius: 5px;
   margin: 30px 45px;
-  color: #00c853;
+  color: #7c4dff;
   font-size: large;
+  z-index: 3;
   cursor: pointer;
 }
 .menu-btn i{
@@ -72,6 +74,7 @@ body{
   position: fixed;
   top: 0px;
   right: 0px;
+  z-index: 3;
 }
 
 .navClose{
@@ -80,8 +83,8 @@ body{
   margin: 20px 0px;
 }
 .menu-area .navClose h6{
-  font-size: x-small;
-  color: #00c853;
+  font-size: small;
+  color: #7c4dff;
   margin: 5px 0px;
   font-weight: 500;
   font-family: "ubuntu";
@@ -157,7 +160,7 @@ section{
 #home .home-text h3{
   font-size: large;
   font-weight: 700;
-  color: #00c853;
+  color: #7c4dff;
   margin: 10px 0;
 }
 #home .home-text h1{
@@ -202,7 +205,7 @@ section{
   padding: 120px 30px;
   justify-content: center;
   align-items: center;
-  background-color: #00c853;
+  background-color: #4527a0;
   text-align: center;
 }
 .about-header{
@@ -213,7 +216,8 @@ section{
 .about-header h3{
   font-size: 14px;
   font-weight: 600;
-  color: #000000;
+  color: #ffffff;
+  opacity: 0.8;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -229,7 +233,8 @@ section{
 .about-text p{
   text-align: center;
   font-size: 18px;
-  color: #000000;
+  color: #ffffff;
+  opacity: 0.8;
   opacity: 0.8;
   margin: 10px 0px;
 }
@@ -274,7 +279,7 @@ section{
   font-weight: 600;
   margin-top: 5px;
   margin-bottom: 5px;
-  color: #00c853;
+  color: #4527a0;
 }
 .service-intro h1{
   font-size: 48px;
@@ -324,7 +329,13 @@ section{
     flex-direction: column;
   }
   .home-icons{
-    display: none;
+    display: flex;
+    gap: 20px;
+    width: 80vw;
+    font-size: 18px;
+    bottom: -200px;
+    justify-content: center;
+    align-items: center;
   }
   .about-header h1{
     font-size: 32px;
