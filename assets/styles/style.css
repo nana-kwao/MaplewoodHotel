@@ -85,6 +85,19 @@ body{
   justify-content: space-between;
   margin: 20px 0px;
 }
+
+#book-btn{
+  position: fixed;
+  bottom: 0;
+  width: 170px !important;
+  right: 0;
+  z-index: 3;
+  background-color: #4527A0 !important;
+  margin: 20px;
+}
+.container button:hover{
+  color: rgb(255, 255, 255, 0.8) !important;
+}
 .menu-area .navClose h6{
   font-size: small;
   color: #7c4dff;
@@ -180,7 +193,7 @@ section{
   font-weight: 800;
   text-align: center;
 }
-#home button{
+.book-accommodation{
   width: 270px;
   height: 50px;
   margin: 10px 0px;
