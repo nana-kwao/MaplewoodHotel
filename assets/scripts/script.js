@@ -1,4 +1,14 @@
 
+    window.addEventListener('load', function () {
+      var loadingBar = document.getElementById('loading-bar');
+      loadingBar.style.width = '100%';
+      setTimeout(function () {
+        var loadingContainer = document.getElementById('loading-container');
+        loadingContainer.style.display = 'none';
+      }, 500); // Adjust the duration of the fade out transition
+    });
+    
+    
 // close and open menu function
 const menuBtn = document.querySelector(".menu-btn");
 const menuArea = document.querySelector(".menu-area");
