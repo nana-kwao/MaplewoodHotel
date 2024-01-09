@@ -1,9 +1,9 @@
 
     window.addEventListener('load', function () {
-      var loadingBar = document.getElementById('loading-bar');
-      loadingBar.style.width = '100%';
+      let loadingContainer = document.getElementById('loading-container');
+      loadingContainer.style.opacity = 0;
       setTimeout(function () {
-        var loadingContainer = document.getElementById('loading-container');
+        let loadingContainer = document.getElementById('loading-container');
         loadingContainer.style.display = 'none';
       }, 500); // Adjust the duration of the fade out transition
     });
