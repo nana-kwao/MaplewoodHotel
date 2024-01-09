@@ -1,22 +1,3 @@
-window.addEventListener('load', () => {
-  const progressBar = document.querySelector('.progress');
-
-  // Simulate loading progress (replace with your actual loading logic)
-  for (let i = 0; i <= 100; i++) {
-    setTimeout(() => {
-      progressBar.style.width = i + '%';
-    }, i * 10); // Adjust delay as needed
-  }
-
-  // Hide progress bar after loading
-  setTimeout(() => {
-    progressBar.style.width = '100%';
-    setTimeout(() => {
-      document.getElementById('progress-bar').style.display = 'none';
-    }, 500); // Delay before hiding
-  }, 1000); // Total loading time
-});
-
 
 // close and open menu function
 const menuBtn = document.querySelector(".menu-btn");
