@@ -40,6 +40,7 @@ body{
   padding: 5px;
   z-index: 3;
   background-color: #151e22;
+  z-index: 3;
 }
 .logo span {
   color: #7c4dff;
@@ -57,6 +58,7 @@ body{
   font-size: large;
   z-index: 3;
   cursor: pointer;
+  z-index: 3;
 }
 .menu-btn i{
   font-size: larger;
@@ -74,6 +76,7 @@ body{
   position: fixed;
   top: 0px;
   right: 0px;
+  z-index: 3;
   z-index: 3;
 }
 
@@ -125,6 +128,10 @@ body{
   gap: 10px;
   justify-content: center;
   align-items: center;
+}
+.menu-icons ul li{
+  font-size: 22px;
+  margin: 0px 10px;
 }
 .arrowUp{
   position: fixed;
@@ -189,6 +196,8 @@ section{
   background-color: rgb(255, 255, 255, 0.8);
 }
 #home .home-icons{
+  display: flex;
+  flex-direction: column;
   position: absolute;
   right: 0;
   margin: 0px 30px;
@@ -205,6 +214,7 @@ section{
   padding: 120px 30px;
   justify-content: center;
   align-items: center;
+  background-color:#4527A0;
   background-color: #4527a0;
   text-align: center;
 }
@@ -216,6 +226,8 @@ section{
 .about-header h3{
   font-size: 14px;
   font-weight: 600;
+  color: #ffffff;
+  opacity: 0.8;
   color: #ffffff;
   opacity: 0.8;
   margin-top: 5px;
@@ -255,7 +267,8 @@ section{
 .portfolio li h3{
   margin: 10px 0px;
   font-size: 12px;
-  color: #000000;
+  color: #ffffff;
+  opacity: 0.8;
 }
 #services{
   padding: 50px 20px;
@@ -321,7 +334,7 @@ section{
   height: auto;
   text-align: center;
 }
-@media screen and (max-width: 685px) {
+@media screen and (max-width: 690px) {
   .logo, .menu-btn{
     margin: 10px;
   }
@@ -366,4 +379,14 @@ section{
     text-align: center;
   }
   
+}
+@media screen and (max-width: 910px){
+  .home-icons{
+    display: flex;
+    gap: 10px;
+    bottom: 10px;
+  }
+  .home-icons li{
+    margin: 0px 5px;
+  }
 }
