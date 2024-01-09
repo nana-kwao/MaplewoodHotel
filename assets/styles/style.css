@@ -19,6 +19,7 @@
 body{
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
 #loading-container {
   position: fixed;
@@ -28,18 +29,20 @@ body{
   display: flex;
   align-items: center;
   opacity: 1;
-  transition: width 0.5s ease;
   justify-content: center;
-  height: 100%; /* Set your progress bar height */
-  background-color: #f0f0f0; /* Set your progress bar background color */
+  height: 100%; 
+  background-color: #ffffff;
+  transition: opacity 0.5s ease;
   z-index: 9999;
 }
-#loading-bar {
+#loading{
+  border: 6px solid #4527A0;
+  border-top: 6px solid #b8b6b6;
   border-radius: 50%;
   height: 50px;
   width: 50px;
   background-color: #4527A0; /* Set your progress bar color */
-  animation: spin 1s linear infinite;
+  animation: spin 1s liner infinite;
 }
 @keyframes spin{
   0% { transform: rotate(0deg);}
