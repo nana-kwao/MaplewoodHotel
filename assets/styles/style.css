@@ -383,10 +383,11 @@ section{
 @media screen and (max-width: 910px){
   .home-icons{
     display: flex;
-    gap: 10px;
-    bottom: 10px;
-  }
-  .home-icons li{
-    margin: 0px 5px;
+    gap: 20px;
+    width: 80vw;
+    font-size: 18px;
+    bottom: -200px;
+    justify-content: center;
+    align-items: center;
   }
 }
