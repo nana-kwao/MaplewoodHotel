@@ -25,24 +25,24 @@ body{
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   opacity: 1;
   justify-content: center;
-  height: 100%; 
+  height: 100vh; 
   background-color: #ffffff;
   transition: opacity 0.5s ease;
-  z-index: 9999;
+  z-index: 5;
 }
 #loading{
-  border: 6px solid #4527A0;
-  border-top: 6px solid #b8b6b6;
+  border: 8px solid #4527A0;
+  border-top: 8px solid #b8b6b6;
   border-radius: 50%;
   height: 50px;
   width: 50px;
   background-color: #4527A0; /* Set your progress bar color */
-  animation: spin 1s liner infinite;
+  animation: spin 3s liner infinite;
 }
 @keyframes spin{
   0% { transform: rotate(0deg);}
