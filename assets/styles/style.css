@@ -42,7 +42,7 @@ body{
   height: 50px;
   width: 50px;
   background-color: #4527A0; /* Set your progress bar color */
-  animation: spin 3s liner infinite;
+  animation: spin 1s liner infinite;
 }
 @keyframes spin{
   0% { transform: rotate(0deg);}
