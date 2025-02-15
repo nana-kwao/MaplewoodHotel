@@ -3,7 +3,6 @@
       const loadingContainer = document.getElementById('loading-container');
       loadingContainer.style.opacity = 0;
       setTimeout(function () {
-        const loadingContainer = document.getElementById('loading-container');
         loadingContainer.style.display = 'none';
       }, 500); // Adjust the duration of the fade out transition
     });
